@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center;">
+      Inicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="link-test-login">
+    <h1>Bienvenid@! {{data.ValorEnviar.usuario}}</h1>
+    <ion-alert
+  trigger="present-alert"
+  header="Alert"
+  subHeader="Important message"
+  message="This is an alert!"
+  [buttons]="alertButtons"
+></ion-alert>
+
+<a mat-list-item routerLink="/login" routerLinkActive="active">Ingreso</a>
+
+  </div>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title> Created by Group 3 </ion-title>
+    </ion-toolbar>
+  </ion-footer>
+  
+
+ 
